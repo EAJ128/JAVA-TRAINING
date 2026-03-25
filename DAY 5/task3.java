@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class User
 {
     String name;
@@ -68,10 +70,16 @@ class FoodDelivery extends User
 
 public class task3 {
     public static void main(String[] args) {
-        User u=new User("DAVID",1234567890,"HYDERABAD");
-        RideBooking r=new RideBooking("CAR", 0, null, null);
-        ParcelDelivery p=new ParcelDelivery(null, 5, null, 0);
-        FoodDelivery f=new FoodDelivery("PIZZA", 0, null, null);
+        Scanner s=new Scanner(System.in);
+        String name=s.nextLine();
+        int phoneno=s.nextInt();
+        s.nextLine();
+        String location=s.nextLine();
+        User u=new User(name,phoneno,location);
+        RideBooking r=new RideBooking(name,phoneno,location,"CAR");
+        ParcelDelivery p=new ParcelDelivery(name,phoneno,location,10);
+        FoodDelivery f=new FoodDelivery(name,phoneno,location,"PIZZA");
+
         r.displayinfo();
         p.displayinfo();
         f.displayinfo();
