@@ -15,3 +15,4 @@ public class lc3232 {
         return sum1!=sum2;
     }
 }
+

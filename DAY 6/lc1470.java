@@ -13,3 +13,4 @@ public class lc1470 {
         return arr;
     }
 }
+

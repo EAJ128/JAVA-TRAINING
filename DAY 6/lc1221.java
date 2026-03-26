@@ -20,3 +20,4 @@ public class lc1221 {
         return c;
     }
 }
+

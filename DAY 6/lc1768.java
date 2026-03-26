@@ -26,3 +26,4 @@ public class lc1768 {
         return new String(sb);
     }
 }
+
