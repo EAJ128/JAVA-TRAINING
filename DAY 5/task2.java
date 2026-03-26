@@ -24,10 +24,12 @@ class Driver extends User{
         super.display();
     }
 }
+@SuppressWarnings("unused")
 class task2
 {
     public static void main(String[] args)
     {
+        @SuppressWarnings("unused")
         Driver d=new Driver("DAVID");
     }
 }

@@ -69,13 +69,13 @@ class FoodDelivery extends User
 
 
 public class task3 {
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
         String name=s.nextLine();
         int phoneno=s.nextInt();
         s.nextLine();
         String location=s.nextLine();
-        User u=new User(name,phoneno,location);
         RideBooking r=new RideBooking(name,phoneno,location,"CAR");
         ParcelDelivery p=new ParcelDelivery(name,phoneno,location,10);
         FoodDelivery f=new FoodDelivery(name,phoneno,location,"PIZZA");
@@ -83,5 +83,6 @@ public class task3 {
         r.displayinfo();
         p.displayinfo();
         f.displayinfo();
+        s.close();
     }
 }
