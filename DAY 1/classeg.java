@@ -8,6 +8,7 @@ class student
     
 }
 
+@SuppressWarnings("unused")
 class classeg
 {
 

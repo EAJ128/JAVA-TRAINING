@@ -23,6 +23,7 @@ class emailnotification extends notification
 		super(name,msg,email);
 
 	}
+    @Override
 	void send()
 	{
 		System.out.println("EMAIL NOTIFICATION HAS BEEN SENT TO "+name+" WITH THE MESSAGE "+msg+"Is SENT TO "+details);
@@ -35,6 +36,7 @@ class smsnotification extends notification
 		super(name,msg,phoneno);
 
 	}
+	@Override
 	void send()
 	{
 		System.out.println("SMS NOTIFICATION HAS BEEN SENDT TO "+name+" WITH THE MESSAGE "+msg+"IS SENT TO "+details);
