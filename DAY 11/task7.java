@@ -39,22 +39,29 @@ abstract class Document implements DocumentActions {
         this.size = size;
     }
 
+    public Document() {
+    }
+
     public void getName() {
         System.out.println(name +" Of Size "+size);
     }
 
+    @Override
     public void open() {
         System.out.println("Opening " + name);
     }
 
+    @Override
     public void save() {
         System.out.println("Saving " + name);
     }
 
+    @Override
     public void close() {
         System.out.println("Closing " + name);
     }
 
+    @Override
     public abstract void process();
 }
 
@@ -63,6 +70,7 @@ class TextDoc extends Document {
         super(name, size);
     }
 
+    @Override
     public void process() {
         System.out.print("Showing text content: " );
         getName();
@@ -74,6 +82,7 @@ class ImageDoc extends Document {
         super(name, size);
     }
 
+    @Override
     public void process() {
         System.out.print("Rendering image: ");
         getName();
@@ -85,6 +94,7 @@ class SpreadsheetDoc extends Document {
         super(name, size);
     }
 
+    @Override
     public void process() {
         System.out.println("Calculating cells: " );
         getName();
