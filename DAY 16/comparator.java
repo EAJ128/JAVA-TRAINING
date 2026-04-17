@@ -32,8 +32,10 @@ public class comparator {
         student.add(new Student("Charlie", 80,6));   
         student.add(new Student("David", 95,2));
         student.add(new Student("Eve", 88,8));
+        @SuppressWarnings("Convert2Lambda")
         Comparator<Student> byId=new Comparator<Student>()
         {
+            @Override
             public int compare(Student a,Student b)
             {
                 return a.id-b.id;
