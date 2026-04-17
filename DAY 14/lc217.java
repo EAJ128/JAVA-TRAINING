@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class lc217
 {
     public boolean containsDuplicate(int[] nums) {

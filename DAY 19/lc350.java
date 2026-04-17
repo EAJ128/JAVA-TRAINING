@@ -1,3 +1,5 @@
+import java.util.*;
+
 class lc350
 {
     public int[] intersect(int[] nums1, int[] nums2) {
